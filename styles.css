@@ -1,6 +1,34 @@
-.barra {
-  background: blue;
-  color: white;
-  text-align: center;
-  padding: 10px;
+body {
+    font-family: Arial;
+    margin: 0;
 }
+
+
+.barra {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.linea {
+    height: 8px;
+    background: red;
+    border-top: 8px solid white;
+    border-bottom: 8px solid red;
+}
+
+.titulo {
+    background: navy;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
