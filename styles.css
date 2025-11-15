@@ -19,6 +19,7 @@ body {
     border-bottom: 8px solid red;
 }
 
+
 .titulo {
     background: navy;
     color: white;
@@ -29,6 +30,34 @@ body {
 }
 
 
+.fila3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
 
 
+.video-agencia,
+.mapa-localizacion {
+    background: lightskyblue;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    
+}
 
+
+.marquesina {
+    background: red;
+    color: yellow;       
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;       
+    width: 600px;       
+    height: auto;        
+    margin: auto;
+    font-size: 14px;    
+}
