@@ -188,4 +188,24 @@ body {
     font-weight: bold;
 }
 
+.cotizacion-vehiculos input,
+.cotizacion-vehiculos select,
+.cotizacion-vehiculos button {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.cotizacion-vehiculos button {
+    background: red;
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cotizacion-vehiculos button:hover {
+    background: darkred;
+}
+
 
