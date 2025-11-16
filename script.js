@@ -1,19 +1,28 @@
-document.getElementById("formCotizacion").onsubmit = function () {
+function calcularCotizacion() {
+  var nombre = document.getElementById("nombre").value;
+  var correo = document.getElementById("correo").value;
 
-    var nombre = document.getElementById("nombre").value;
-    var correo = document.getElementById("correo").value;
-    var financiamiento = document.querySelector("input[name='financiamiento']:checked").value;
-    var marca = document.getElementById("marca").value;
+  var financiamiento = "";
+  if(document.getElementById("contado").checked) financiamiento = "Contado";
+  if(document.getElementById("credito").checked) financiamiento = "Crédito";
 
-    var extrasTexto = "";
-}
-    if (document.getElementById("aire").checked) extrasTexto += "- Aire acondicionado<br>";
-    if (document.getElementById("gps").checked) extrasTexto += "- GPS<br>";
-    if (document.getElementById("seguro").checked) extrasTexto += "- Incluir seguro<br>";
-    if (document.getElementById("quemacocos").checked) extrasTexto += "- Quemacocos<br>";
-    if (document.getElementById("camaraT").checked) extrasTexto += "- Cámara trasera<br>";
-    if (document.getElementById("camaraF").checked) extrasTexto += "- Cámara frontal<br>";
+  var marca = document.getElementById("marca").value;
 
-    if (extrasTexto === "") {
-        extrasTexto = "(No se seleccionaron extras)";
+  var extras = "";
+  if(document.getElementById("aire").checked) extras += "Aire acondicionado, ";
+  if(document.getElementById("gps").checked) extras += "GPS, ";
+  if(document.getElementById("seguro").checked) extras += "Incluir seguro, ";
+  if(document.getElementById("quemacocos").checked) extras += "Quemacocos, ";
+  if(document.getElementById("camaraT").checked) extras += "Cámara trasera, ";
+  if(document.getElementById("camaraF").checked) extras += "Cámara frontal, ";
+  if(extras === "") extras = "No seleccionaste extras";
+
+  var resultado = 
+  "Nombre: " + nombre + "<br>" +
+  "Correo: " + correo + "<br>" +
+  "Financiamiento: " + financiamiento + "<br>" +
+  "Marca: " + marca + "<br>" +
+  "Extras: " + extras;
+
+  document.getElementById("resultadoCotizacion").innerHTML = resultado;
 }

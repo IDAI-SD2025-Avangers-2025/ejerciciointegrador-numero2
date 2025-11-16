@@ -125,7 +125,7 @@
 
 <div class="cotizacion-vehiculos">
 <h2>Cotizacion de vehiculos</h2>
-<form id="formCotizacion">
+<form id="formCotizacion" onsubmit="calcularCotizacion(); return false;">
 <label>Nombre completo:</label>
 <input type="text" id="nombre" required><br><br>
 
@@ -152,7 +152,8 @@
 <label for="camaraT">Camara Trasera</label>
 <input type="checkbox" id="camaraF" value="Camara frontal">
 <label for="camaraF">Camara Frontal</label>
-
+<br>
+<br>
 <label>Marca del vehículo:</label>
 <select id="marca" required>
 <option value="">Selecciona una marca</option>
