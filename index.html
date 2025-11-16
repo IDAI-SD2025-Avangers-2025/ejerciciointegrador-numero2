@@ -124,7 +124,7 @@
 
 <div class="cotizacion de vehiculos">
 <h2>Cotizacion de vehiculos</h2>
-<form id="FormCotizacion"></form>
+<form id="FormCotizacion">
 <label>Nombre completo:</label>
 <input type="text" id="nombre" required><br><br>
 
@@ -136,10 +136,40 @@
 <label for="contado">Contado</label>
 <input type="radio" id="credito" name="financiamiento" value="Crédito">
 <label for="credito">Crédito</label><br><br>
-</div>
+
 
 <p>Extras:</p>
+<input type="checkbox" id="aire" value="Aire Acondicionado">
+<label for="aire">Aire Acondicionado</label>
+<input type="checkbox" id="gps" value="GPS">
+<label for="gps">GPS</label>
+<input type="checkbox" id="seguro" value="Incluir Seguro">
+<label for="seguro">Incluir Seguro</label><br><br>
+<input type="checkbox" id="quemacocos" value="Quemacocos">
+<label for="quemacocos">Quemacocos</label>
+<input type="checkbox" id="camaraT" value="Camara trasera">
+<label for="camaraT">Camara Trasera</label>
+<input type="checkbox" id="camaraF" value="Camara frontal">
+<label for="camaraF">Camara Frontal</label>
 
+<label>Marca del vehículo:</label>
+<select id="marca" required>
+<option value="">Selecciona una marca</option>
+<option value="HONDA">HONDA</option>
+<option value="NISSAN">NISSAN</option>
+<option value="TOYOTA">TOYOTA</option>
+<option value="MAZDA">MAZDA</option>
+<option value="HYUNDAI">HYUNDAI</option>
+<option value="KIA">KIA</option>
+<option value="MITSUBISHI">MITSUBISHI</option>
+<option value="SUZUKI">SUZUKI</option>
+</select><br><br>
+
+<button type="submit">Enviar Cotización</button>
+</form>
+
+<div id="resultadoCotizacion" style="margin-top:20px; font-weight: bold;"></div>
+</div>
 
 <script src="script.js"></script>
 
