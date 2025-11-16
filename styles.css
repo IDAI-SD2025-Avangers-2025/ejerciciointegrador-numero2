@@ -160,3 +160,11 @@ body {
     border-top: 8px solid white;
     border-bottom: 8px solid red;
 }
+
+.barra {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
