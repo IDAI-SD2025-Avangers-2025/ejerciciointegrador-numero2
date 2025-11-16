@@ -116,36 +116,47 @@ body {
 
 
 
+.honda,
+.nissan,
+.toyota,
+.mazda,
 .hyundai,
-.kia, 
-.mitsubishi, 
-.suzuki
-
-{
-
-    border: 2px solid gray;
-    padding: 15px;
+.kia,
+.mitsubishi,
+.suzuki {
+    background: red;
+    color: yellow;
     text-align: center;
-    border-radius: 10px;
-    background: white;
-
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 
-
-.imagenes{
-
+.imagenes {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 10px;
-
 }
 
-.img-carro{
 
+.img-carro {
     width: 120px;
     height: auto;
-    border-radius: 6px;
+}
 
+.pie-pagina {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.linea {
+    height: 8px;
+    background: red;
+    border-top: 8px solid white;
+    border-bottom: 8px solid red;
 }
